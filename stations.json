@@ -1,0 +1,18 @@
+{
+  "Kol_Chai": {
+    "name": "קול חי",
+    "stream": "https://live.kcm.fm/live-new"
+  },
+  "Kol_Barama": {
+    "name": "קול ברמה",
+    "stream": "https://cdn.cybercdn.live/Kol_Barama/Live_Audio/icecast.audio"
+  },
+  "Kol_Chai_Music": {
+    "name": "קול חי מיוזיק",
+    "stream": "https://live.kcm.fm/livemusic"
+  },
+  "Kol_Play": {
+    "name": "קול פליי",
+    "stream": "https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio"
+  }
+}
