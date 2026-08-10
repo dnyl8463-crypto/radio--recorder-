@@ -1,0 +1,28 @@
+name: Hourly Radio Recorder
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Record radio stations
+        run: |
+          python3 recorder.py
+
+      - name: Show files
+        run: |
+          ls -lh *.mp3
